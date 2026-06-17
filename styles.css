@@ -4,22 +4,39 @@ body {
 
 .canvas {
     position: relative;
-}
-
-.background-img {
     width: 100%;
 }
 
-.box {
+.background-img {
+    height: 100%;
+    display: flex;
+}
+
+.room-1 {
     position: absolute;
-    position: absolute;
-    top: 70%;
-    left: 1%;
-    width: 20%;
-    z-index: 2; /* Above background */
+    top: 55%;
+    left: 0.8%;
+    width: 13%;
+    height: 42%;
+    z-index: 2;
 
 }
 
-.box:hover {
+.room-2 {
+    position: absolute;
+    top: -135%;
+    left: 0;
+    width: 150%;
+    height: 52%;
+    z-index: 3;
+}
+
+.room-1:hover {
     cursor: pointer;
+    border: 10px solid green;
+}
+
+.room-2:hover {
+    cursor: pointer;
+    border: 10px solid green;
 }
