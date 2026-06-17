@@ -40,7 +40,14 @@ body {
 
 }
 
-.room-2 {
+
+
+.room-1:hover {
+    cursor: pointer;
+    border: 10px solid green;
+}
+
+.room-4 {
     position: absolute;
     top: 8%;
     left: 1%;
@@ -49,12 +56,7 @@ body {
     z-index: 3;
 }
 
-.room-1:hover {
-    cursor: pointer;
-    border: 10px solid green;
-}
-
-.room-2:hover {
+.room-4:hover {
     cursor: pointer;
     border: 10px solid green;
 }

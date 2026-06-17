@@ -16,25 +16,27 @@ const rooms = {
 
 let background_img = document.getElementById("background-img")
 let room1 = document.getElementsByClassName("room-1")
-let room2 = document.getElementsByClassName("room-2")
+let room2 = document.getElementsByClassName("room-4")
 
 
 function hideRooms() {
-    room1.style.display = "none"
-    room2.style.display = "none"
-}
-function onClickRoom1() {
-    background_img.src = "images/backgrounds/detailansicht_schlafzimmer1.png"
-    hideRooms()
+    room1.remove()
+    room2.remove()
 }
 
-function onClickRoom2() {
-    background_img.src = "images/background/detailansicht_schlafzimmer1.png"
-    console.log("Hallo2")
+function showRooms() {
+    room1.style.display = "block"
+    room2.style.display = "block"
+}
+
+
+function onClickRoom(imageSrc) {
+    background_img.src = imageSrc
+    console.log(imageSrc)
+    hideRooms()
 }
 
 function goBack() {
     background_img.src = "images/backgrounds/house_background.png"
+    showRooms()
 }
-
-fu
