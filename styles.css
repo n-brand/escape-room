@@ -1,15 +1,33 @@
+html {
+    color: rgb(125, 200, 255);
+}
+
 body {
     margin: 0;
 }
 
 .canvas {
     position: relative;
-    width: 100%;
 }
 
 .background-img {
     height: 100%;
+    width: 100%;
     display: flex;
+}
+
+.back-btn{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
+    height: 40px;
+    border: 10px;
+    background: gray;
+}
+
+
+.back-btn:hover{
+    background: rgb(80, 80, 80);
 }
 
 .room-1 {
@@ -24,10 +42,10 @@ body {
 
 .room-2 {
     position: absolute;
-    top: -135%;
-    left: 0;
-    width: 150%;
-    height: 52%;
+    top: 8%;
+    left: 1%;
+    width: 20%;
+    height: 20%;
     z-index: 3;
 }
 
